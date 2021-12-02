@@ -1,0 +1,17 @@
+domain: hybridapp.io
+layout: go.kubebuilder.io/v2
+projectName: ham-placement
+repo: github.com/ham-placement
+resources:
+- group: core
+  kind: Deployer
+  version: v1alpha1
+- group: core
+  kind: DeployerSet
+  version: v1alpha1
+- group: core
+  kind: PlacementRule
+  version: v1alpha1
+version: 3-alpha
+plugins:
+  go.sdk.operatorframework.io/v2-alpha: {}
