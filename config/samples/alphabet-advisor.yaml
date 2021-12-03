@@ -1,0 +1,13 @@
+apiVersion: core.hybridapp.io/v1alpha1
+kind: PlacementRule
+metadata:
+  name: alphabet-advisor
+spec:
+  deployerType: kubernetes
+  replicas: 1
+  targetLabels:
+    matchLabels:
+      cloud: IBM
+  advisors:
+  - name: alphabet    
+    weight: 50
